@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="./main.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
     <title>Multi Step Form</title>
   </head>
@@ -27,5 +28,111 @@
         </div>
       </div>
     </nav>
+
+    <section class="form-wrapper">
+      <form class="form">
+        <div id="1" class="form-content active">
+          <div class="input-data">
+            <input
+              type="text"
+              name="first"
+              required
+              placeholder="Enter your first name"
+            />
+            <div class="underline"></div>
+            <label>First Name</label>
+          </div>
+          <div class="input-data">
+            <input
+              type="text"
+              name="last"
+              required
+              placeholder="Enter your last name"
+            />
+            <div class="underline"></div>
+            <label>Last Name</label>
+          </div>
+          <div class="input-data">
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Enter your email@.com"
+            />
+            <div class="underline"></div>
+            <label>Email</label>
+          </div>
+          <button class="btn next">Continue</button>
+        </div>
+        <div id="2" class="form-content">
+          <div class="input-data">
+            <input
+              type="text"
+              name="occupation"
+              required
+              placeholder="Enter your Occupation"
+            />
+            <div class="underline"></div>
+            <label>Occupation</label>
+          </div>
+          <div class="input-data">
+            <input
+              type="text"
+              name="city"
+              required
+              placeholder="Enter your City"
+            />
+            <div class="underline"></div>
+            <label>City</label>
+          </div>
+          <div class="input-data">
+            <input
+              type="text"
+              name="bio"
+              required
+              placeholder="Enter your Bio"
+            />
+            <div class="underline"></div>
+            <label>Bio</label>
+          </div>
+          <button class="btn next">Continue</button>
+          <button class="btn previous">Previous</button>
+        </div>
+        <div id="3" class="form-content all-details">
+          <div class="content">
+            <h3>Full Name : Rohan Banerjee</h3>
+            <h3>First Name : Rohan</h3>
+            <h3>Last Name: Banerjee</h3>
+            <p>Email: banerjeerohan279@gmail.com</p>
+            <p>Occupation : Web Development</p>
+            <p>City : Kolkata</p>
+            <p>Bio : I am a Good Boy</p>
+          </div>
+          <button class="btn next">Confirm & Submit</button>
+          <button class="btn previous">Previous</button>
+        </div>
+        <div id="4" class="form-content all-details">
+          <div class="content">
+            <h1>Thank you for submittig</h1>
+            <h3>Come back again later!!</h3>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- <section id="3" class="all-details disable">
+      <h3>Full Name : Rohan Banerjee</h3>
+      <h3>First Name : Rohan</h3>
+      <h3>Last Name: Banerjee</h3>
+      <p>Email: banerjeerohan279@gmail.com</p>
+      <p>Occupation : Web Development</p>
+      <p>City : Kolkata</p>
+      <p>Bio : I am a Good Boy</p>
+    </section>
+
+    <section id="4" class="thank-you disable">
+      <h1>Thank you for submittig</h1>
+      <h3>Come back again later!!</h3>
+    </section> -->
   </body>
 </html>

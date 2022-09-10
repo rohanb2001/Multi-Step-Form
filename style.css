@@ -40,3 +40,118 @@ body {
   text-transform: uppercase;
   font-size: 14px;
 }
+
+/* Form */
+.form-wrapper {
+  margin: 2rem auto;
+  height: 50vh;
+  width: 500px;
+}
+
+.form-content {
+  display: none;
+}
+
+.form-content .input-data {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.form-content.active {
+  display: block;
+}
+
+.form-content .input-data input {
+  height: 80%;
+  width: 60%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  /* border-bottom: 1px solid silver; */
+}
+
+.input-data input::placeholder {
+  color: transparent;
+}
+
+.input-data input:focus::placeholder {
+  color: #b1a5a5;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+  transform: translateY(-25px);
+  font-size: 12px;
+  color: #4158d0;
+}
+
+.form-content .input-data label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.form-content .input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 80%;
+}
+
+.input-data .underline::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 80%;
+  background: #4158d0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.input-data input:focus ~ .underline::before,
+.input-data input:valid ~ .underline::before {
+  transform: scaleX(1);
+}
+
+.form-content button {
+  padding: 12px 20px;
+  outline: none;
+  border: none;
+  background: #53d3fd;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 2rem;
+}
+
+.form-content button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.form-content.all-details {
+  text-align: center;
+}
+
+.form-content.all-details h3 {
+  margin: 1rem 0;
+}
+
+.all-details p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.form-content.thank-you {
+  text-align: center;
+}
+.form-content.thank-you h1 {
+  margin: 2rem 0;
+}
