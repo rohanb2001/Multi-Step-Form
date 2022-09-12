@@ -115,8 +115,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.input-data input:focus ~ .underline::before,
-.input-data input:valid ~ .underline::before {
+.input-data input:focus ~ .underline::before {
   transform: scaleX(1);
 }
 
@@ -137,6 +136,16 @@ body {
 
 .form-content.all-details {
   text-align: center;
+}
+
+button.previous {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #333;
+}
+
+button.previous:hover {
+  background-color: #dfd4d4;
 }
 
 .form-content.all-details h3 {
